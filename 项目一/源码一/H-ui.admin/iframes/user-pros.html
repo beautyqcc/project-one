@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>用户信息管理</title>
+<link rel="stylesheet" type="text/css" href="../js/bootstrap/css/bootstrap.min.css">
+<style>
+  .tab{position:absolute;top:70px;display:none;right:450px;z-index:2;width:900px;background: #fff;}
+  #content{position:absolute;top:0px;left:0px;width:100%;height:100%;background:rgba(230,230,230,0.8);display:none;}
+  #search{position: absolute;top:5px;right:150px;}
+  .show-img{position:absolute;top:100px;left:400px;width:400px;height:400px;display: none;}
+  .pros{position:absolute;width:800px;top:70px;right:450px;display:none;z-index: 3;font-size: 16px;}
+  .tit{ margin: 10px auto;}
+  .pros-content{text-indent:22px;}
+</style>
+</head>
+
+<body>
+<!-- 用户信息开始-->
+<table class="table table-hover">
+  <caption style="font-size:18px;margin-left:8px;">用户信息管理</caption>
+  <div id="search"><input type="text" id="in-search" placeholder="用户信息模糊查找"><button>搜索</button></div>
+  <tr>
+    <th>编号</th>
+    <th>用户名</th>
+    <th>用户账号</th>
+    <th>真实姓名</th>
+    <th>头像</th>
+    <th>实名认证</th>
+    <th>注册日期</th>
+    <th>手机号码</th>
+    <th>职业</th>
+    <th>所在城市</th>
+    <th>信用等级</th>
+    <th>信用值</th>
+    <th>账户余额</th>
+    <th>紫砖余额</th>
+    <th>账单详情</th>
+    <th>借款任务</th>
+    <th>普通任务</th>
+    <th>用户状态</th>
+    <th>在线状态</th>
+    <th>举报人</th>
+    <th>举报理由</th>
+    <th>操作</th>
+  </tr>
+   <tr>
+     <td>001</td>
+     <td>滴滴滴</td>
+     <td>111aaa</td>
+     <td>哈哈哈</td>
+     <td class="img"><img src="../images/cn.gif" width="16" height="11"></td>
+     <td>已实名认证</td>
+     <td>2014-06-01</td>
+     <td>1593245864</td>
+     <td>工人</td>
+     <td>杭州</td>
+     <td>紫砖</td>
+     <td class="xin"><a href="#">500</a></td>
+     <td>123</td>
+     <td class="zi"><a href="#">100</a></td>
+     <td class="zhang"><a href="#">查看详情</a></td>
+     <td class="jie"><a href="#">25条</a></td>
+     <td class="pu"><a href="#">17条</a></td>
+     <td class="jin">启用</td>
+     <td>离线</td>
+     <td>王二狗</td>
+     <td class="jubao"><a href="#">举报内容详情</a></td>
+     <td><button  class="btn">启用</button></td>
+  </tr>
+   <tr>
+     <td>001</td>
+     <td>滴滴滴</td>
+     <td>111aaa</td>
+     <td>哈哈哈</td>
+     <td class="img"><img src="../images/cn.gif" width="16" height="11"></td>
+     <td>已实名认证</td>
+     <td>2014-06-01</td>
+     <td>1593245864</td>
+     <td>工人</td>
+     <td>杭州</td>
+     <td>紫砖</td>
+     <td class="xin"><a href="#">500</a></td>
+     <td>123</td>
+     <td class="zi"><a href="#">100</a></td>
+     <td class="zhang"><a href="#">查看详情</a></td>
+     <td class="jie"><a href="#">25条</a></td>
+     <td class="pu"><a href="#">17条</a></td>
+     <td class="jin">启用</td>
+     <td>离线</td>
+     <td>王二狗</td>
+     <td class="jubao"><a href="#">举报内容详情</a></td>
+     <td><button  class="btn">启用</button></td>
+  </tr>
+</table>
+<!-- 用户信息结束 -->
+<div id="content"></div>
+<!--  蒙版-->
+<div class="show-img"><img width="600" height="600" class="big-img" src="../images/1.jpg"></div>
+<!-- 信用值开始 -->
+<div id="table1" class="tab">
+  <table class="table table-striped" >
+      <tr>
+        <th>日期</th>
+        <th>时间</th>
+        <th>交易类型</th>
+        <th>信用变化</th>
+        <th>信用余额</th>
+      </tr>
+       <tr>
+        <th>20174-06-05</th>
+        <th>11.07</th>
+        <th>充值</th>
+        <th>+1</th>
+        <th>26</th>
+      </tr>
+      <tr>
+        <th>20174-06-05</th>
+        <th>11.07</th>
+        <th>充值</th>
+        <th>+1</th>
+        <th>26</th>
+      </tr>
+      <tr>
+        <th>20174-06-05</th>
+        <th>11.07</th>
+        <th>充值</th>
+        <th>+1</th>
+        <th>26</th>
+      </tr>
+    </table>
+</div>
+<!-- 信用值结束 -->
+<!-- 紫砖余额开始 -->
+<div id="table2" class="tab">
+  <table class="table table-striped" >
+      <tr>
+        <th>日期</th>
+        <th>时间</th>
+        <th>交易类型</th>
+        <th>紫钻变化</th>
+        <th>紫钻余额</th>
+      </tr>
+       <tr>
+        <th>20174-06-05</th>
+        <th>11.07</th>
+        <th>充值</th>
+        <th>+1</th>
+        <th>26</th>
+      </tr>
+      <tr>
+        <th>20174-06-05</th>
+        <th>11.07</th>
+        <th>充值</th>
+        <th>+1</th>
+        <th>26</th>
+      </tr>
+      <tr>
+        <th>20174-06-05</th>
+        <th>11.07</th>
+        <th>充值</th>
+        <th>+1</th>
+        <th>26</th>
+      </tr>
+    </table>
+</div>
+<!-- 紫砖余额结束 -->
+<!-- 账单详情开始-->
+<div id="table3" class="tab">
+  <table class="table table-striped" >
+      <tr>
+        <th>日期</th>
+        <th>时间</th>
+        <th>交易类型</th>
+        <th>金额变化</th>
+        <th>余额</th>
+      </tr>
+       <tr>
+        <th>20174-06-05</th>
+        <th>11.07</th>
+        <th>充值</th>
+        <th>+1</th>
+        <th>26</th>
+      </tr>
+      <tr>
+        <th>20174-06-05</th>
+        <th>11.07</th>
+        <th>充值</th>
+        <th>+1</th>
+        <th>26</th>
+      </tr>
+      <tr>
+        <th>20174-06-05</th>
+        <th>11.07</th>
+        <th>充值</th>
+        <th>+1</th>
+        <th>26</th>
+      </tr>
+    </table>
+</div>
+<!-- 账单详情结束 -->
+<!-- 借款任务开始 -->
+<div id="table4" class="tab">
+  <table class="table table-striped" >
+      <tr>
+        <th>日期</th>
+        <th>时间</th>
+        <th>借款金额</th>
+        <th>手续费</th>
+        <th>还款日期</th>
+        <th>还款方式</th>
+        <th>借款用途</th>
+      </tr>
+       <tr>
+        <th>20174-06-05</th>
+        <th>11.07</th>
+        <th>充值</th>
+        <th>+1</th>
+        <th>26</th>
+        <th>+1</th>
+        <th>26</th>
+      </tr>
+      <tr>
+        <th>20174-06-05</th>
+        <th>11.07</th>
+        <th>充值</th>
+        <th>+1</th>
+        <th>26</th>
+        <th>+1</th>
+        <th>26</th>
+      </tr>
+      <tr>
+        <th>20174-06-05</th>
+        <th>11.07</th>
+        <th>充值</th>
+        <th>+1</th>
+        <th>26</th>
+        <th>+1</th>
+        <th>26</th>
+      </tr>
+    </table>
+</div>
+<!-- 借款任务结束 -->
+<!-- 普通任务开始 -->
+<div id="table5" class="tab">
+  <table class="table table-striped" >
+      <tr>
+        <th>日期</th>
+        <th>时间</th>
+        <th>任务名称</th>
+        <th>任务内容</th>
+        <th>留言</th>
+        <th>发布人</th>
+
+      </tr>
+       <tr>
+        <th>20174-06-05</th>
+        <th>11.07</th>
+        <th>充值</th>
+        <th>+1</th>
+        <th>+1</th>
+        <th>26</th>
+      </tr>
+      <tr>
+        <th>20174-06-05</th>
+        <th>11.07</th>
+        <th>充值</th>
+        <th>+1</th>
+        <th>+1</th>
+        <th>26</th>
+      </tr>
+      <tr>
+        <th>20174-06-05</th>
+        <th>11.07</th>
+        <th>充值</th>
+        <th>+1</th>
+        <th>+1</th>
+        <th>26</th>
+      </tr>
+    </table>
+</div>
+<!-- 普通任务结束 -->
+<!-- 举报内容开始 -->
+<div class="pros tab" >
+  <h3 class="tit"><span>举报类型:</span><span id="reason">诈骗</span></h3>
+  <div class="pros-content">各种诈骗就发，就发is大家疯狂送大家非常，低附加的手机号入耳发货,各种诈骗就发，就发is大家疯狂送大家非常，低附加的手机号入耳发货</div>
+</div>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript">
+//举报内容开始
+$(".jubao").click(function(){
+   $("#content").show();
+   $(".pros").show();
+
+});
+// 信用值
+$(".xin a").click(function(){
+    $("#content").show();
+   $('#table1').show();
+ });
+//头像
+$(".img").click(function(){
+   $(".show-img").show();
+   $(".big-img").attr(src);
+});
+//紫砖余额
+$(".zi a").click(function(){
+    $("#content").show();
+   $('#table2').show();
+});
+//账单详情
+$(".zhang a").click(function(){
+    $("#content").show();
+   $('#table3').show();
+});
+//借款任务
+$(".jie a").click(function(){
+    $("#content").show();
+   $('#table4').show();
+});
+//普通任务
+$(".pu a").click(function(){
+    $("#content").show();
+   $('#table5').show();
+});
+//蒙版消失
+$("#content").click(function(){
+ $(".tab").hide();
+ $(this).hide();
+})
+//头像消失
+$(".show-img").click(function(){
+
+$(this).hide();
+});
+// 操作
+$(".btn").click(function(){
+  alert("您已禁用该用户");
+  var html=$(this).html("禁用");
+  $(this).parent().parent().remove();
+});
+</script>
+</body>
+</html>
